@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+
 import { ImageResponse } from "next/og";
 import { docs, meta } from "@/.source";
 import { loader } from "fumadocs-core/source";
@@ -232,10 +234,10 @@ export default async function Image({ params }: { params: { slug: string } }) {
                   <span>{authorDetails.name}</span>
                 </div>
               )}
-              {authorDetails && page.data.date && (
+              {authorDetails && typeof page.data.date === "string" && (
                 <span style={styles.dotSeparator}>•</span>
               )}
-              {page.data.date && (
+              {typeof page.data.date === "string" && (
                 <p style={{ ...styles.metaBase, ...styles.dateMeta }}>
                   {formatDate(page.data.date)}
                 </p>

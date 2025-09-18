@@ -6,12 +6,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import Image from "next/image";
-import { TableOfContents } from "@/components/table-of-contents";
 import { MobileTableOfContents } from "@/components/mobile-toc";
-import { AuthorCard } from "@/components/author-card";
-import { ReadMoreSection } from "@/components/read-more-section";
-import { getAuthor, isValidAuthor } from "@/lib/authors";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import { HashScrollHandler } from "@/components/hash-scroll-handler";
 
@@ -45,8 +40,8 @@ export default async function BlogPost({ params }: PageProps) {
     notFound();
   }
 
-  const MDX = page.data.body;
-  const date = new Date(page.data.date);
+  const MDX = page.data.body as React.ComponentType;
+  const date = new Date(page.data.date as string | number | Date);
   const formattedDate = formatDate(date);
 
   return (
@@ -72,9 +67,9 @@ export default async function BlogPost({ params }: PageProps) {
                 <span className="sr-only">Back to all articles</span>
               </Link>
             </Button>
-            {page.data.tags && page.data.tags.length > 0 && (
+            {Array.isArray(page.data.tags) && page.data.tags.length > 0 && (
               <div className="flex flex-wrap gap-3 text-muted-foreground">
-                {page.data.tags.map((tag: string) => (
+                {(page.data.tags as string[]).map((tag: string) => (
                   <span
                     key={tag}
                     className="h-6 w-fit px-3 text-sm font-medium bg-muted text-muted-foreground rounded-md border flex items-center justify-center"

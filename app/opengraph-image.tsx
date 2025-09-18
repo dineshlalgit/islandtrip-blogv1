@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import NexyImage from "next/image";
 
 export const runtime = "edge";
 export const alt = "Blog - Magic UI";
@@ -104,7 +105,7 @@ export default async function Image() {
           }}
         >
           <div style={styles.container}>
-            <img
+            <NexyImage
               src={
                 assetData?.logoBase64 ||
                 `${process.env.NEXT_PUBLIC_SITE_URL}/magicui-logo.png`
@@ -115,8 +116,8 @@ export default async function Image() {
             />
             <h1 style={styles.title}>Blog</h1>
             <p style={styles.description}>
-              Most Visited Islands Worldwide Discover the world's most beloved
-              island destinations, each offering unique experiences and
+              Most Visited Islands Worldwide — Discover the world&apos;s most
+              beloved island destinations, each offering unique experiences and
               unforgettable memories
             </p>
           </div>
