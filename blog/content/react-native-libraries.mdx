@@ -1,0 +1,239 @@
+---
+title: "Ulaman Eco Luxury Retreat, Bali: A Rainforest Paradise"
+description: "Discover Ulaman Bali, an award-winning eco luxury retreat near Canggu offering bamboo villas, rainforest vibes, and sustainable architecture."
+date: "2024-11-25"
+tags: ["Bali", "Eco Luxury Retreat", "Sustainable Travel"]
+featured: true
+readTime: "12 min read"
+author: "Dinesh"
+thumbnail: "/thumbnails/ulaman-bali-eco-luxury-bamboo-resort-rainforest-in.jpg"
+---
+
+import { Card, CardContent } from "@/components/card"
+import { Badge } from "@/components/badge"
+import { Button } from "@/components/button"
+import { MapPin, Clock, Camera, Leaf, Plane, Waves } from "lucide-react"
+
+export default function UlamanBlogPage() {
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Header */}
+      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+          <div className="flex items-center space-x-2">
+            <Waves className="h-8 w-8 text-primary" />
+            <span className="text-2xl font-bold text-foreground">IslandTrip</span>
+          </div>
+          <nav className="hidden md:flex items-center space-x-6">
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Home</a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Destinations</a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Travel Tips</a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">About</a>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/ulaman-bali-eco-luxury-bamboo-resort-rainforest-in-P59EBweCvAcTVIGXgNhOTBmSiM8IRv.jpg')`,
+          }}
+        >
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
+        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white dark:text-white">Ulaman Eco Luxury Retreat, Bali</h1>
+          <p className="text-xl md:text-2xl mb-8 opacity-90">
+            A rainforest paradise near Canggu where bamboo villas, waterfalls, and sustainable design meet true luxury.
+          </p>
+          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+            Plan Your Eco Escape
+          </Button>
+        </div>
+      </section>
+
+      {/* Quick Facts */}
+      <section className="py-12 bg-muted/50">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="text-center">
+              <MapPin className="h-8 w-8 text-primary mx-auto mb-2" />
+              <h3 className="font-semibold text-foreground">Location</h3>
+              <p className="text-muted-foreground">Near Canggu, Bali</p>
+            </div>
+            <div className="text-center">
+              <Clock className="h-8 w-8 text-primary mx-auto mb-2" />
+              <h3 className="font-semibold text-foreground">Best Time</h3>
+              <p className="text-muted-foreground">Apr - Oct (Dry Season)</p>
+            </div>
+            <div className="text-center">
+              <Plane className="h-8 w-8 text-primary mx-auto mb-2" />
+              <h3 className="font-semibold text-foreground">Airport</h3>
+              <p className="text-muted-foreground">Ngurah Rai Intl. (1 hr)</p>
+            </div>
+            <div className="text-center">
+              <Leaf className="h-8 w-8 text-primary mx-auto mb-2" />
+              <h3 className="font-semibold text-foreground">Highlights</h3>
+              <p className="text-muted-foreground">Eco Architecture</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <main className="container mx-auto px-4 py-16">
+        <div className="grid lg:grid-cols-3 gap-12">
+          {/* Article Content */}
+          <article className="lg:col-span-2 space-y-8">
+            {/* Intro */}
+            <section>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Staying at <strong>Ulaman Eco Luxury Retreat</strong> is like being on another planet. Nestled in the
+                heart of Bali’s lush rainforest yet only minutes from the beach, this award-winning retreat is redefining
+                what it means to travel sustainably.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                With its innovative bamboo architecture, serene waterfalls, and tranquil wellness spaces, Ulaman is a
+                sanctuary for eco-conscious travelers seeking both luxury and balance with nature.
+              </p>
+            </section>
+
+            {/* Experiences */}
+            <section>
+              <h2 className="text-3xl font-bold mb-6">What Makes Ulaman Special?</h2>
+              <div className="space-y-6">
+                <Card>
+                  <CardContent className="p-6">
+                    <h3 className="text-2xl font-bold mb-4">Sustainable Architecture</h3>
+                    <p className="text-card-foreground leading-relaxed">
+                      Ulaman is built almost entirely with natural materials like bamboo and rammed earth. Every curve,
+                      bridge, and villa integrates with the rainforest, creating an immersive design that’s both
+                      breathtaking and eco-friendly.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardContent className="p-6">
+                    <h3 className="text-2xl font-bold mb-4">Luxury Meets Nature</h3>
+                    <p className="text-card-foreground leading-relaxed">
+                      From infinity pools overlooking the jungle to private bamboo villas, Ulaman offers a luxury
+                      experience without sacrificing sustainability. It’s a retreat where indulgence feels responsible.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardContent className="p-6">
+                    <h3 className="text-2xl font-bold mb-4">Wellness & Healing</h3>
+                    <p className="text-card-foreground leading-relaxed">
+                      Rejuvenate with spa treatments, yoga sessions, and holistic therapies inspired by Balinese healing
+                      traditions. The rainforest setting amplifies every wellness experience with its calming energy.
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            </section>
+
+            {/* When to Visit */}
+            <section>
+              <h2 className="text-3xl font-bold mb-6">Best Time to Visit</h2>
+              <p className="text-card-foreground leading-relaxed mb-4">
+                The ideal time to enjoy Ulaman is between <strong>April and October</strong>, Bali’s dry season. Expect
+                sunny skies, warm temperatures, and the perfect balance between exploring beaches and relaxing in the
+                rainforest.
+              </p>
+            </section>
+          </article>
+
+          {/* Sidebar */}
+          <aside className="space-y-8">
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-4">Quick Navigation</h3>
+                <nav className="space-y-2">
+                  <a href="#sustainable-architecture" className="block text-muted-foreground hover:text-primary transition-colors">Sustainable Architecture</a>
+                  <a href="#luxury-meets-nature" className="block text-muted-foreground hover:text-primary transition-colors">Luxury Meets Nature</a>
+                  <a href="#wellness-healing" className="block text-muted-foreground hover:text-primary transition-colors">Wellness & Healing</a>
+                  <a href="#when-to-visit" className="block text-muted-foreground hover:text-primary transition-colors">Best Time to Visit</a>
+                </nav>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-4">Travel Tips</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <Camera className="h-5 w-5 text-primary mt-1" />
+                    <div>
+                      <h4 className="font-medium">Bring a Camera</h4>
+                      <p className="text-sm text-muted-foreground">The bamboo architecture is an Instagram dream.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <Leaf className="h-5 w-5 text-primary mt-1" />
+                    <div>
+                      <h4 className="font-medium">Pack Light</h4>
+                      <p className="text-sm text-muted-foreground">Opt for eco-friendly essentials to match the vibe.</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </aside>
+        </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-muted border-t border-border py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <div className="flex items-center space-x-2 mb-4">
+                <Waves className="h-6 w-6 text-primary" />
+                <span className="text-xl font-bold text-foreground">IslandTrip</span>
+              </div>
+              <p className="text-muted-foreground text-sm">
+                Your guide to sustainable, luxury, and unforgettable island escapes across Asia.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Destinations</h4>
+              <nav className="space-y-2">
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">Bali</a>
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">Thailand</a>
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">Philippines</a>
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">Vietnam</a>
+              </nav>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Travel Tips</h4>
+              <nav className="space-y-2">
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">Planning</a>
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">Budgeting</a>
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">Eco Travel</a>
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">Wellness</a>
+              </nav>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Connect</h4>
+              <nav className="space-y-2">
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">Instagram</a>
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">Facebook</a>
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">YouTube</a>
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">Newsletter</a>
+              </nav>
+            </div>
+          </div>
+          <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
+            © 2024 IslandTrip. All rights reserved.
+          </div>
+        </div>
+      </footer>
+    </div>
+
+)
+}

@@ -1,0 +1,312 @@
+---
+title: "Mauritius Underwater Waterfall Illusion: A Surreal Natural Wonder"
+description: "Discover the breathtaking underwater waterfall illusion in Mauritius. Learn how this optical illusion is formed, the best ways to see it, and when to visit this bucket-list destination."
+date: "2024-11-25"
+tags: ["Mauritius", "Travel Guide", "Optical Illusion", "Africa"]
+featured: true
+readTime: "14 min read"
+author: "dillion"
+thumbnail: "/thumbnails/mauritius-underwater-waterfall-aerial-view.jpg"
+---
+
+import { Card, CardContent } from "@/components/card"
+import { Badge } from "@/components/badge"
+import { Button } from "@/components/button"
+import { MapPin, Clock, Camera, Waves, Mountain, Plane } from "lucide-react"
+
+export default function MauritiusBlogPage() {
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Header */}
+      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+          <div className="flex items-center space-x-2">
+            <Waves className="h-8 w-8 text-primary" />
+            <span className="text-2xl font-bold text-foreground">IslandTrip</span>
+          </div>
+          <nav className="hidden md:flex items-center space-x-6">
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Home</a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Destinations</a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Travel Tips</a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">About</a>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('/thumbnails/mauritius-underwater-waterfall-aerial-view.jpg')`,
+          }}
+        >
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
+        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white dark:text-white">
+            Mauritius Underwater Waterfall Illusion
+          </h1>
+          <p className="text-xl md:text-2xl mb-8 text-pretty opacity-90">
+            Witness one of nature’s most surreal optical illusions from above — a must-see wonder in the Indian Ocean.
+          </p>
+          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+            Plan Your Adventure
+          </Button>
+        </div>
+      </section>
+
+      {/* Quick Facts */}
+      <section className="py-12 bg-muted/50">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="text-center">
+              <MapPin className="h-8 w-8 text-primary mx-auto mb-2" />
+              <h3 className="font-semibold text-foreground">Location</h3>
+              <p className="text-muted-foreground">Le Morne Brabant, Southwest Mauritius</p>
+            </div>
+            <div className="text-center">
+              <Clock className="h-8 w-8 text-primary mx-auto mb-2" />
+              <h3 className="font-semibold text-foreground">Best Time</h3>
+              <p className="text-muted-foreground">May – Dec</p>
+            </div>
+            <div className="text-center">
+              <Camera className="h-8 w-8 text-primary mx-auto mb-2" />
+              <h3 className="font-semibold text-foreground">Best View</h3>
+              <p className="text-muted-foreground">Helicopter / Drone</p>
+            </div>
+            <div className="text-center">
+              <Plane className="h-8 w-8 text-primary mx-auto mb-2" />
+              <h3 className="font-semibold text-foreground">Tour Duration</h3>
+              <p className="text-muted-foreground">30–60 minutes</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <main className="container mx-auto px-4 py-16">
+        <div className="grid lg:grid-cols-3 gap-12">
+          {/* Article Content */}
+          <article className="lg:col-span-2 space-y-8">
+            {/* Introduction */}
+            <section>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Off the coast of Mauritius lies a phenomenon that seems straight out of science fiction — an underwater
+                waterfall. While it looks like a massive cascade plunging into the depths of the ocean, it’s actually an{" "}
+                <strong>optical illusion</strong>. From the air, sand and silt drifting off the coastal shelf create the
+                appearance of a waterfall flowing under the sea.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                This striking illusion near <strong>Le Morne Brabant</strong> has become one of Mauritius’s most
+                photographed attractions, drawing travelers from around the world.
+              </p>
+            </section>
+
+            {/* How It Works */}
+            <section>
+              <h2 className="text-3xl font-bold text-foreground mb-6">How the Illusion Works</h2>
+              <Card className="mb-8">
+                <CardContent className="p-6">
+                  <img
+                    src="/thumbnails/mauritius-helicopter-tour-underwater-waterfall.jpg"
+                    alt="Mauritius Underwater Waterfall Illusion"
+                    className="w-full h-80 object-cover rounded-lg mb-4"
+                  />
+                  <p className="text-card-foreground leading-relaxed">
+                    The illusion is formed when ocean currents push sand and silt off the edge of a steep undersea
+                    shelf. From above, this creates streaks that look like a waterfall pouring into an endless abyss.
+                  </p>
+                </CardContent>
+              </Card>
+            </section>
+
+            {/* Best Ways to Experience */}
+            <section>
+              <h2 className="text-3xl font-bold text-foreground mb-6">Best Ways to Experience It</h2>
+              <div className="bg-card rounded-lg p-6 mb-6">
+                <h3 className="text-2xl font-bold mb-4">🚁 Helicopter Tours</h3>
+                <p className="text-card-foreground leading-relaxed mb-4">
+                  The most breathtaking view is from above. Helicopter or small plane tours reveal the full illusion of
+                  the underwater waterfall.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <Badge>Duration: 30–60 mins</Badge>
+                  <Badge>Best Time: Morning</Badge>
+                  <Badge>Cost: $150–400</Badge>
+                </div>
+              </div>
+
+              <div className="bg-card rounded-lg p-6 mb-6">
+                <h3 className="text-2xl font-bold mb-4">🤿 Scuba Diving & Snorkeling Nearby</h3>
+                <p className="text-card-foreground leading-relaxed mb-4">
+                  While you can’t dive into the illusion itself, the reefs nearby are filled with vibrant marine life —
+                  perfect for diving and snorkeling.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <Badge>Visibility up to 30m</Badge>
+                  <Badge>Tropical Fish & Rays</Badge>
+                  <Badge>Suitable for all levels</Badge>
+                </div>
+              </div>
+
+              <div className="bg-card rounded-lg p-6 mb-6">
+                <h3 className="text-2xl font-bold mb-4">📸 Drone Photography</h3>
+                <p className="text-card-foreground leading-relaxed">
+                  A drone offers travelers the chance to capture this illusion from their own lens. Just be sure to
+                  follow local drone regulations.
+                </p>
+              </div>
+            </section>
+
+            {/* When to Visit */}
+            <section>
+              <h2 className="text-3xl font-bold text-foreground mb-6">When to Visit</h2>
+              <div className="bg-card rounded-lg p-6">
+                <p className="text-card-foreground leading-relaxed mb-4">
+                  The best time to see the underwater waterfall illusion is during the{" "}
+                  <strong>dry season from May to December</strong>. Clear skies provide the best aerial views for
+                  helicopters or drones.
+                </p>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-2">Dry Season</h4>
+                    <ul className="text-sm text-muted-foreground space-y-1">
+                      <li>• Clear skies and calm seas</li>
+                      <li>• Ideal for aerial tours</li>
+                      <li>• Higher tourist demand</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2">Wet Season</h4>
+                    <ul className="text-sm text-muted-foreground space-y-1">
+                      <li>• Warmer and humid</li>
+                      <li>• Lower prices</li>
+                      <li>• Cloudy skies can affect views</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </article>
+
+          {/* Sidebar */}
+          <aside className="space-y-8">
+            {/* Quick Links */}
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-4">Quick Navigation</h3>
+                <nav className="space-y-2">
+                  <a href="#how-the-illusion-works" className="block text-muted-foreground hover:text-primary">How It Works</a>
+                  <a href="#best-ways-to-experience-it" className="block text-muted-foreground hover:text-primary">Ways to Experience</a>
+                  <a href="#when-to-visit" className="block text-muted-foreground hover:text-primary">When to Visit</a>
+                </nav>
+              </CardContent>
+            </Card>
+
+            {/* Travel Tips */}
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-4">Essential Travel Tips</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <Camera className="h-5 w-5 text-primary mt-1" />
+                    <div>
+                      <h4 className="font-medium">Photography</h4>
+                      <p className="text-sm text-muted-foreground">Best aerial shots in morning light.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <Plane className="h-5 w-5 text-primary mt-1" />
+                    <div>
+                      <h4 className="font-medium">Booking</h4>
+                      <p className="text-sm text-muted-foreground">Reserve helicopter tours 2–3 days in advance.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <Waves className="h-5 w-5 text-primary mt-1" />
+                    <div>
+                      <h4 className="font-medium">Safety</h4>
+                      <p className="text-sm text-muted-foreground">Check weather before aerial or water tours.</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Related Articles */}
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-4">Related Articles</h3>
+                <div className="space-y-4">
+                  <article className="border-b border-border pb-4">
+                    <h4 className="font-medium mb-1">Top Natural Wonders of Africa</h4>
+                    <p className="text-sm text-muted-foreground">Discover more surreal landscapes across Africa.</p>
+                  </article>
+                  <article className="border-b border-border pb-4">
+                    <h4 className="font-medium mb-1">Best Island Destinations 2024</h4>
+                    <p className="text-sm text-muted-foreground">Plan your next escape with our curated list.</p>
+                  </article>
+                  <article>
+                    <h4 className="font-medium mb-1">Helicopter Tours: A Complete Guide</h4>
+                    <p className="text-sm text-muted-foreground">Everything to know before booking an aerial tour.</p>
+                  </article>
+                </div>
+              </CardContent>
+            </Card>
+          </aside>
+        </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-muted border-t border-border py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <div className="flex items-center space-x-2 mb-4">
+                <Waves className="h-6 w-6 text-primary" />
+                <span className="text-xl font-bold text-foreground">IslandTrip</span>
+              </div>
+              <p className="text-muted-foreground text-sm">
+                Your ultimate guide to discovering the most beautiful islands and destinations around the world.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Destinations</h4>
+              <nav className="space-y-2">
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">Mauritius</a>
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">Bali</a>
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">Maldives</a>
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">Seychelles</a>
+              </nav>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Travel Tips</h4>
+              <nav className="space-y-2">
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">Planning</a>
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">Budgeting</a>
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">Safety</a>
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">Photography</a>
+              </nav>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Connect</h4>
+              <nav className="space-y-2">
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">Newsletter</a>
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">Instagram</a>
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">Facebook</a>
+                <a href="#" className="block text-sm text-muted-foreground hover:text-primary">YouTube</a>
+              </nav>
+            </div>
+          </div>
+          <div className="border-t border-border mt-8 pt-8 text-center">
+            <p className="text-muted-foreground text-sm">
+              © 2024 IslandTrip. All rights reserved. | Privacy Policy | Terms of Service
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+)
+}

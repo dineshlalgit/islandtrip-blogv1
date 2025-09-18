@@ -1,0 +1,206 @@
+---
+title: "Shebara Island, Saudi Arabia: A Futuristic Red Sea Escape"
+description: "Discover Shebara Island in Saudi Arabia - a futuristic NEOM destination with overwater villas, pristine coral reefs, and sustainable luxury. Plan your Red Sea adventure with IslandTrip."
+date: "2024-12-05"
+tags: ["Saudi Arabia", "Shebara Island", "NEOM", "Red Sea", "Luxury Travel"]
+featured: true
+readTime: "14 min read"
+author: "dillion"
+thumbnail: "/thumbnails/Shebara-press-release-imagejpg.jpg"
+---
+
+import { Card, CardContent } from "@/components/card"
+import { Badge } from "@/components/badge"
+import { Button } from "@/components/button"
+import { MapPin, Clock, Camera, Waves, Plane, Star } from "lucide-react"
+
+export default function ShebaraIslandBlogPage() {
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Header */}
+      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+          <div className="flex items-center space-x-2">
+            <Waves className="h-8 w-8 text-primary" />
+            <span className="text-2xl font-bold text-foreground">IslandTrip</span>
+          </div>
+          <nav className="hidden md:flex items-center space-x-6">
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Home</a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Destinations</a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Travel Tips</a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">About</a>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('/thumbnails/Shebara-press-release-imagejpg.jpg')`,
+          }}
+        >
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
+        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+          <Badge className="mb-4 bg-blue-600 text-white border-blue-600">🇸🇦 Saudi Arabia • NEOM</Badge>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white dark:text-white">Shebara Island: A Futuristic Red Sea Escape</h1>
+          <p className="text-xl md:text-2xl mb-8 opacity-90">
+            Experience tomorrow’s luxury tourism today in Saudi Arabia’s revolutionary Red Sea destination.
+          </p>
+          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+            Plan Your Journey
+          </Button>
+        </div>
+      </section>
+
+      {/* Quick Facts */}
+      <section className="py-12 bg-muted/50">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="text-center">
+              <MapPin className="h-8 w-8 text-primary mx-auto mb-2" />
+              <h3 className="font-semibold">Location</h3>
+              <p className="text-muted-foreground">Red Sea, NEOM</p>
+            </div>
+            <div className="text-center">
+              <Clock className="h-8 w-8 text-primary mx-auto mb-2" />
+              <h3 className="font-semibold">Best Time</h3>
+              <p className="text-muted-foreground">Oct – Apr</p>
+            </div>
+            <div className="text-center">
+              <Plane className="h-8 w-8 text-primary mx-auto mb-2" />
+              <h3 className="font-semibold">Access</h3>
+              <p className="text-muted-foreground">Seaplane Transfer</p>
+            </div>
+            <div className="text-center">
+              <Star className="h-8 w-8 text-primary mx-auto mb-2" />
+              <h3 className="font-semibold">Experience</h3>
+              <p className="text-muted-foreground">Luxury Eco-Resort</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <main className="container mx-auto px-4 py-16">
+        <div className="grid lg:grid-cols-3 gap-12">
+          {/* Article */}
+          <article className="lg:col-span-2 space-y-8">
+            {/* Intro */}
+            <section>
+              <p className="text-lg text-muted-foreground mb-6">
+                Saudi Arabia is fast becoming one of the world’s most talked-about destinations — and{" "}
+                <strong>Shebara Island</strong> is leading the way. Part of the visionary{" "}
+                <strong>NEOM project</strong>, this island is a blend of sustainability, futuristic architecture, and
+                natural wonder in the pristine <strong>Red Sea</strong>.
+              </p>
+              <p className="text-lg text-muted-foreground">
+                Imagine overwater villas that look like they’re from a sci-fi movie, untouched coral reefs, and starlit
+                skies with zero light pollution — Shebara is redefining the island escape.
+              </p>
+            </section>
+
+            {/* Futuristic Architecture */}
+            <section>
+              <h2 className="text-3xl font-bold mb-6">Futuristic Architecture</h2>
+              <Card>
+                <CardContent className="p-6">
+                  <img
+                    src="/thumbnails/shebara1.jpg"
+                    alt="Futuristic villas on Shebara Island"
+                    className="w-full h-80 object-cover rounded-lg mb-4"
+                  />
+                  <p>
+                    Shebara features revolutionary overwater villas designed with renewable energy and eco-friendly
+                    materials. These structures float gracefully above turquoise waters, creating a surreal, space-age
+                    vibe while staying rooted in sustainability.
+                  </p>
+                </CardContent>
+              </Card>
+            </section>
+
+            {/* Marine Life */}
+            <section>
+              <h2 className="text-3xl font-bold mb-6">Untouched Marine Beauty</h2>
+              <Card>
+                <CardContent className="p-6">
+                  <img
+                    src="/thumbnails/shebara2.jpg"
+                    alt="Pristine coral reefs in Shebara Island, Red Sea"
+                    className="w-full h-80 object-cover rounded-lg mb-4"
+                  />
+                  <p>
+                    Surrounded by some of the world’s clearest waters, Shebara offers visibility of up to 30 meters.
+                    Over 1,200 species of fish and 200 coral varieties thrive here, making it a paradise for divers and
+                    snorkelers alike.
+                  </p>
+                </CardContent>
+              </Card>
+            </section>
+
+            {/* Activities */}
+            <section>
+              <h2 className="text-3xl font-bold mb-6">Things to Do</h2>
+              <div className="bg-card rounded-lg p-6">
+                <ul className="space-y-3 text-muted-foreground">
+                  <li>🤿 Scuba Diving — explore untouched reefs of the Red Sea</li>
+                  <li>🛶 Kayaking & Paddleboarding — glide through turquoise lagoons</li>
+                  <li>🏝️ Overwater Villa Stay — futuristic eco-luxury above the sea</li>
+                  <li>🌌 Stargazing — Shebara’s dark skies make it a natural observatory</li>
+                </ul>
+              </div>
+            </section>
+          </article>
+
+          {/* Sidebar */}
+          <aside className="space-y-8">
+            {/* Quick Nav */}
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-4">Quick Navigation</h3>
+                <nav className="space-y-2">
+                  <a href="#futuristic-architecture" className="block text-muted-foreground hover:text-primary">Architecture</a>
+                  <a href="#marine-beauty" className="block text-muted-foreground hover:text-primary">Marine Life</a>
+                  <a href="#activities" className="block text-muted-foreground hover:text-primary">Activities</a>
+                </nav>
+              </CardContent>
+            </Card>
+
+            {/* Travel Tips */}
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-4">Travel Tips</h3>
+                <div className="space-y-3">
+                  <div className="flex space-x-2">
+                    <Plane className="h-5 w-5 text-primary" />
+                    <p className="text-sm text-muted-foreground">Arrive via seaplane from NEOM Bay Airport</p>
+                  </div>
+                  <div className="flex space-x-2">
+                    <Camera className="h-5 w-5 text-primary" />
+                    <p className="text-sm text-muted-foreground">Bring underwater gear for diving photography</p>
+                  </div>
+                  <div className="flex space-x-2">
+                    <Clock className="h-5 w-5 text-primary" />
+                    <p className="text-sm text-muted-foreground">Best season: Oct – Apr for cooler weather</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </aside>
+        </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-muted border-t border-border py-12">
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-sm text-muted-foreground">
+            © 2024 IslandTrip. All rights reserved. | Privacy Policy | Terms of Service
+          </p>
+        </div>
+      </footer>
+    </div>
+
+)
+}

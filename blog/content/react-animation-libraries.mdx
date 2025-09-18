@@ -1,0 +1,254 @@
+---
+title: "Taha’a, French Polynesia: A Hidden Paradise in the Pacific"
+description: "Discover Taha’a, a secret gem in French Polynesia. Known for its vanilla-scented air, coral lagoons, and untouched beauty, this island is an off-the-beaten-path paradise in the South Pacific."
+date: "2024-11-28"
+tags:
+  ["Taha’a", "French Polynesia", "Tahiti", "Secret Paradise", "Travel Guide"]
+featured: true
+readTime: "13 min read"
+author: "dillion"
+thumbnail: "/thumbnails/tahaa-french-polynesia-lagoon.jpg"
+---
+
+import { Card, CardContent } from "@/components/card"
+import { Badge } from "@/components/badge"
+import { Button } from "@/components/button"
+import { MapPin, Waves, Camera, Plane, Clock, Leaf } from "lucide-react"
+
+export default function TahaaBlogPage() {
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Header */}
+      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+          <div className="flex items-center space-x-2">
+            <Waves className="h-8 w-8 text-primary" />
+            <span className="text-2xl font-bold text-foreground">IslandTrip</span>
+          </div>
+          <nav className="hidden md:flex items-center space-x-6">
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Home</a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Destinations</a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Travel Tips</a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">About</a>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('/thumbnails/tahaa-french-polynesia-lagoon.jpg')`,
+          }}
+        >
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
+        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white dark:text-white">
+            Taha’a: The Secret Paradise of French Polynesia
+          </h1>
+          <p className="text-xl md:text-2xl mb-8 opacity-90">
+            Just a tiny speck in the middle of the Pacific Ocean — but one of the most breathtaking specks you’ll ever see.
+          </p>
+          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+            Plan Your Escape
+          </Button>
+        </div>
+      </section>
+
+      {/* Quick Facts */}
+      <section className="py-12 bg-muted/50">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="text-center">
+              <MapPin className="h-8 w-8 text-primary mx-auto mb-2" />
+              <h3 className="font-semibold">Location</h3>
+              <p className="text-muted-foreground">Society Islands, French Polynesia</p>
+            </div>
+            <div className="text-center">
+              <Clock className="h-8 w-8 text-primary mx-auto mb-2" />
+              <h3 className="font-semibold">Best Time</h3>
+              <p className="text-muted-foreground">May – October</p>
+            </div>
+            <div className="text-center">
+              <Plane className="h-8 w-8 text-primary mx-auto mb-2" />
+              <h3 className="font-semibold">Access</h3>
+              <p className="text-muted-foreground">15 min flight from Bora Bora</p>
+            </div>
+            <div className="text-center">
+              <Leaf className="h-8 w-8 text-primary mx-auto mb-2" />
+              <h3 className="font-semibold">Specialty</h3>
+              <p className="text-muted-foreground">Vanilla Plantations</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <main className="container mx-auto px-4 py-16">
+        <div className="grid lg:grid-cols-3 gap-12">
+          {/* Article */}
+          <article className="lg:col-span-2 space-y-8">
+            {/* Intro */}
+            <section>
+              <p className="text-lg text-muted-foreground mb-6">
+                Taha’a is often overshadowed by its famous neighbor, Bora Bora — but for those who crave an
+                <strong>off-the-beaten-path paradise</strong>, this small island is a dream come true.
+                Known as the “Vanilla Island,” Taha’a is filled with sweet-scented plantations, turquoise lagoons,
+                and coral reefs teeming with marine life.
+              </p>
+              <p className="text-lg text-muted-foreground">
+                Imagine volcanic peaks rising above black sand beaches, fishermen paddling outrigger canoes, and the
+                air perfumed with vanilla — this is the untouched French Polynesia travelers rarely get to see.
+              </p>
+            </section>
+
+            {/* Vanilla Plantations */}
+            <section>
+              <h2 className="text-3xl font-bold mb-6">The Island of Vanilla</h2>
+              <Card className="mb-8">
+                <CardContent className="p-6">
+                  <img
+                    src="/thumbnails/tahaa-vanilla-plantation.avif"
+                    alt="Vanilla plantation in Taha’a, French Polynesia"
+                    className="w-full h-80 object-cover rounded-lg mb-4"
+                  />
+                  <p>
+                    Taha’a produces over 80% of French Polynesia’s vanilla, and its plantations are world-famous.
+                    Walk among lush vines, learn about traditional curing techniques, and taste some of the richest,
+                    most aromatic vanilla in the world.
+                  </p>
+                </CardContent>
+              </Card>
+            </section>
+
+            {/* Things to Do */}
+            <section>
+              <h2 className="text-3xl font-bold mb-6">Things to Do in Taha’a</h2>
+              <div className="bg-card rounded-lg p-6">
+                <ul className="space-y-4 text-muted-foreground">
+                  <li>🏝️ <strong>Lagoon Excursions:</strong> Snorkel with rays and tropical fish in crystal-clear waters.</li>
+                  <li>🍷 <strong>Vanilla Tours:</strong> Visit family-owned plantations and sample fresh vanilla products.</li>
+                  <li>🚤 <strong>Day Trip to Bora Bora:</strong> Just a short boat ride away for iconic views and luxury resorts.</li>
+                  <li>🌅 <strong>Sunset Views:</strong> Enjoy evenings as the sky paints hues over the Pacific horizon.</li>
+                </ul>
+              </div>
+            </section>
+
+            {/* Best Time */}
+            <section>
+              <h2 className="text-3xl font-bold mb-6">When to Visit</h2>
+              <div className="bg-card rounded-lg p-6">
+                <p>
+                  The best time to visit Taha’a is during the <strong>dry season (May–October)</strong>, when the
+                  weather is sunny and perfect for snorkeling, diving, and exploring. The wet season (November–April)
+                  brings occasional rain but fewer crowds and lush, green landscapes.
+                </p>
+              </div>
+            </section>
+          </article>
+
+          {/* Sidebar */}
+          <aside className="space-y-8">
+            {/* Quick Navigation */}
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-4">Quick Navigation</h3>
+                <nav className="space-y-2">
+                  <a href="#vanilla" className="block hover:text-primary">Vanilla Plantations</a>
+                  <a href="#things-to-do" className="block hover:text-primary">Things to Do</a>
+                  <a href="#when-to-visit" className="block hover:text-primary">When to Visit</a>
+                </nav>
+              </CardContent>
+            </Card>
+
+            {/* Travel Tips */}
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-4">Travel Tips</h3>
+                <ul className="space-y-3 text-sm text-muted-foreground">
+                  <li>• Fly to Bora Bora, then connect via boat or small plane to Taha’a.</li>
+                  <li>• Pack reef-safe sunscreen for snorkeling trips.</li>
+                  <li>• Book vanilla plantation tours in advance.</li>
+                  <li>• Carry cash for small local markets.</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Related Articles */}
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-bold mb-4">Related Articles</h3>
+                <div className="space-y-4">
+                  <article>
+                    <h4 className="font-medium mb-1">Bora Bora Travel Guide</h4>
+                    <p className="text-sm text-muted-foreground">Explore French Polynesia’s most iconic island.</p>
+                  </article>
+                  <article>
+                    <h4 className="font-medium mb-1">Hidden Gems of the Pacific</h4>
+                    <p className="text-sm text-muted-foreground">Discover secret islands far from the crowds.</p>
+                  </article>
+                  <article>
+                    <h4 className="font-medium mb-1">Best Islands for Snorkeling</h4>
+                    <p className="text-sm text-muted-foreground">Top spots for underwater adventures worldwide.</p>
+                  </article>
+                </div>
+              </CardContent>
+            </Card>
+          </aside>
+        </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-muted border-t border-border py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <div className="flex items-center space-x-2 mb-4">
+                <Waves className="h-6 w-6 text-primary" />
+                <span className="text-xl font-bold">IslandTrip</span>
+              </div>
+              <p className="text-muted-foreground text-sm">
+                Your trusted guide to the world’s most hidden paradises and secret islands.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Destinations</h4>
+              <nav className="space-y-2">
+                <a href="#" className="block text-sm hover:text-primary">French Polynesia</a>
+                <a href="#" className="block text-sm hover:text-primary">Bora Bora</a>
+                <a href="#" className="block text-sm hover:text-primary">Maldives</a>
+                <a href="#" className="block text-sm hover:text-primary">Seychelles</a>
+              </nav>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Travel Tips</h4>
+              <nav className="space-y-2">
+                <a href="#" className="block text-sm hover:text-primary">Island Hopping</a>
+                <a href="#" className="block text-sm hover:text-primary">Budget Travel</a>
+                <a href="#" className="block text-sm hover:text-primary">Sustainable Tourism</a>
+                <a href="#" className="block text-sm hover:text-primary">Photography</a>
+              </nav>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Connect</h4>
+              <nav className="space-y-2">
+                <a href="#" className="block text-sm hover:text-primary">Instagram</a>
+                <a href="#" className="block text-sm hover:text-primary">Facebook</a>
+                <a href="#" className="block text-sm hover:text-primary">YouTube</a>
+                <a href="#" className="block text-sm hover:text-primary">Newsletter</a>
+              </nav>
+            </div>
+          </div>
+          <div className="border-t border-border mt-8 pt-8 text-center">
+            <p className="text-sm text-muted-foreground">
+              © 2024 IslandTrip. All rights reserved. | Secret Islands, Real Adventures 🌴✨
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+)
+}
